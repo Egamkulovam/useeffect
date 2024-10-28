@@ -1,38 +1,282 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  max-width: 1400px;
+  margin: auto;
+}
+header{
+  width: 100%;
+  background-color: blueviolet;
+  font-size: 35px;
+
+  color: aliceblue;
+  padding: 30px;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header div{
+  display: flex;
+  color: #fff;
+  display: flex;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.basketBtn{
+  padding: 10px;
+  font-size: 30px;
+  position: relative;
+  color: #fff;
+  /* left: -200px; */
+  /* top: 20px;  */
+  /* background-color: rgb(176, 29, 176); */
+  cursor: pointer;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search{
+  padding: 10px;
+  width: 700px;
+  background-color: #fff;
+  border-radius: 9px;
+  color: grey;
+  text-align: left;
+  padding-left: 30PX;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+.carts{
+  border: 1px solid black;
+  padding: 25px;
+  width: 350px;
+  list-style: none;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 15px;
+  
+  
+  
+
+
+}
+.backbtn{
+  width: 150px;
+  height: 60px;
+  background-color: yellowgreen;
+  color: aliceblue;
 }
 
-.App-link {
-  color: #61dafb;
+.price{
+  background-color: yellow;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.carts img{
+  width: 150px;
+  height: 150px;
+  /* border: 1px solid red; */
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  
+
+}
+
+ul{
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+
+}
+
+ul h5{
+  border: 1px solid ;
+  width: 200px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+
+.none{
+  display: none;
+}
+
+.cartli{
+  border: 1px solid black;
+  padding: 25px;
+  width: 200px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.plsmns{
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.plsmns button{
+  padding: 15px;
+}
+
+button{
+  padding: 15px;
+  background-color: greenyellow;
+  border: none;
+  margin: 10px;
+}
+
+.viev{
+  border: 1px solid ;
+  width: 500px;
+  height: 500px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heart{
+  boreder: none;
+  font-size: 25px;
+  background-color: #fff;
+  padding: 0%;
+  margin-left: 270px;
+  margin-top:-20px;
+}
+
+.view p{
+  border: 1px solid;
+  width: 700px;
+  margin: auto;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+.view li{
+  list-style: none;
+  margin-left: 50px;
+  font-size: 30px;
+  font-weight: 950;
+}
+.btns{
+  display: flex;
+  gap: 5px;
+}
+
+
+
+.swiper {
+  width: 1400px;
+  height: 50vh;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper{
+  padding: 60px;
+  margin: 50px;
+  border: 1px solid black;
+}
+
+.heartBtn{
+  position: relative;
+  left: 130px;
+  top: -350px;
+  background-color: #fff;
+  font-size: 30px;
+}
+
+.logotip{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.logotips{
+  font-size: 43px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+
+.header1{
+  height: 4vh;
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a8a7a7ce;
+}
+
+.header1 ul li{
+  cursor: pointer;
+}
+.flagu{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.sel_flag{
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  cursor: col-resize;
+}
+.head_link{
+  display: flex;
+  gap: 15px;
+  list-style: none;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+.boxicon{
+  padding: 50px;
 }
